@@ -1,0 +1,242 @@
+ID:1
+Priority:high
+Module:entry field 
+Environment:iPhone 8 15.0.1., Chrome 94
+Title:entering the correct date format
+Preconditions:the "Date of Birth" input field is active
+Steps to reproduce:1. in the date input field, enter the number 15
+Expected result:1. the number 15 is displayed in the input field
+
+ID:1.1
+Priority:high
+Module:entry field 
+Environment:iPhone 8 15.0.1., Chrome 94
+Title:entering the correct mounth format
+Preconditions:the "Date of Birth" input field is active
+Steps to reproduce:1. in the mounth input field, enter the number 08
+Expected result:1. the number 08 is displayed in the input field
+
+ID:1.2
+Priority:high
+Module:entry field
+Environment:iPhone 8 15.0.1., Chrome 94
+Title:entering the correct year format
+Preconditions:the "Date of Birth" input field is active
+Steps to reproduce:1. in the year input field, enter the number 1993
+Expected result:1. the number 1993 is displayed in the input field
+
+ID:2
+Priority:high
+Module:entry field
+Environment:iPhone 8 15.0.1., Chrome 94
+Title:entering the correct date format using the Calendar
+Preconditions:the "Date of Birth" input field is active
+Steps to reproduce:1. click on the date input field
+2. select the date 01.02.2000
+Expected result:1. the "Calendar" window appears at the bottom of the screen
+2. the date input fields are filled with the number 01, the mounth with the number 02, and the year with the number 2000
+
+ID:3
+Priority:high
+Module:entry field
+Environment:iPhone 8 15.0.1., Chrome 94
+Title:date input outside the minimum value
+Preconditions:the "Date of Birth" input field is active
+Steps to reproduce:1. in the date input field, enter the number 01
+2. in the mounth input field, enter the number 01
+3. in the year input field, enter the number 1900
+Expected result:1. the number 01 is displayed in the input field
+2. the number 01 is displayed in the input field
+3. an error message appears: "The date is incorrect"
+
+ID:4
+Priority:high
+Module:entry field
+Environment:iPhone 8 15.0.1., Chrome 94
+Title:date input outside the maximum value
+Preconditions:the "Date of Birth" input field is active
+Steps to reproduce:1. in the date input field, enter the number 10
+2. in the mounth input field, enter the number 03
+3. in the year input field, enter the number 2025
+Expected result:1. the number 10 is displayed in the input field
+2. the number 03 is displayed in the input field
+3. an error message appears: "The date is incorrect"
+
+ID:5
+Priority:high
+Module:entry field
+Environment:iPhone 8 15.0.1., Chrome 94
+Title:date input with incorrect month format
+Preconditions:the "Date of Birth" input field is active
+Steps to reproduce:1. in the date input field, enter the number 11
+2. in the mounth input field, enter the number 13
+Expected result:1. the number 11 is displayed in the input field
+2. an error message appears: "The date is incorrect"
+
+ID:6
+Priority:high
+Module:entry field
+Environment:iPhone 8 15.0.1., Chrome 94
+Title:date input with incorrect day format
+Preconditions:the "Date of Birth" input field is active
+Steps to reproduce:1. in the date input field, enter the number 31
+2. in the mounth input field, enter the number 06
+Expected result:1. the number 31 is displayed in the input field
+2. an error message appears: "The date is incorrect"
+ 
+ID:7
+Priority:high
+Module:entry field
+Environment:iPhone 8 15.0.1., Chrome 94
+Title:registration of persons under the age of 18
+Preconditions:the "Date of Birth" input field is active
+Steps to reproduce:1. in the date input field, enter the number 01
+2. in the mounth input field, enter the number 02
+3. in the year input field, enter the number 2006
+Expected result:1. the number 01 is displayed in the input field
+2. the number 02 is displayed in the input field
+3. an error message appears: "Persons under 18 years of age are not allowed to register"
+
+ID:8
+Priority:high
+Module:entry field
+Environment:iPhone 8 15.0.1., Chrome 94
+Title:registration of persons under the age of 18 using the Calendar
+Preconditions:the "Date of Birth" input field is active
+Steps to reproduce:1. click on the date input field
+2. select the date 12.02.2018
+Expected result:1. the "Calendar" window appears at the bottom of the screen
+2. an error message appears: "Persons under 18 years of age are not allowed to register"
+
+ID:9
+Priority:high
+Module:entry field
+Environment:iPhone 8 15.0.1., Chrome 94
+Title:the input field is not filled
+Preconditions:the "Date of Birth" input field is active
+Steps to reproduce: 1. skip filling in the field and go to other fields
+Expected result:1. an error message appears: "This field is requried"
+
+ID:10
+Priority:high
+Module:entry field
+Environment:iPhone 8 15.0.1., Chrome 94
+Title:fill in date input field
+Preconditions:the "Date of Birth" input field is active
+Steps to reproduce:1. in the date input field, enter the number 1998
+2. go to filling in other fields
+Expected result:1. the number 1998 is displayed in the input field
+2. an error message appears: "This field is requried"
+
+ID:11
+Priority:high
+Module:entry field
+Environment:iPhone 8 15.0.1., Chrome 94
+Title:entering as many numbers as possible in data field
+Preconditions:the "Date of Birth" input field is active
+Steps to reproduce:1. in the date input field, enter the number 25789
+Expected result:1. the number 25 is displayed in the input field
+
+ID:12
+Priority:high
+Module:entry field
+Environment:iPhone 8 15.0.1., Chrome 94
+Title:entering as many numbers as possible in mounth field
+Preconditions:the "Date of Birth" input field is active
+Steps to reproduce:1. in the mounth input field, enter the number 12346
+Expected result:1. the number 12 is displayed in the input field
+
+ID:12.1
+Priority:high
+Module:entry field
+Environment:iPhone 8 15.0.1., Chrome 94
+Title:entering as many numbers as possible in year field
+Preconditions:the "Date of Birth" input field is active
+Steps to reproduce:1. in the year input field, enter the number 20031
+Expected result:3. the number 2003 is displayed in the input field
+
+ID:13
+Priority:medium
+Module:entry field
+Environment:iPhone 8 15.0.1., Chrome 94
+Title:entering leters in the data field
+Preconditions:the "Date of Birth" input field is active
+Steps to reproduce:1. in the date input field, enter the leters abc	
+Expected result:1. an error message appears: "The date is incorrect"
+
+ID:13.1
+Priority:medium
+Module:entry field
+Environment:iPhone 8 15.0.1., Chrome 94
+Title:entering leters in the mounth field
+Preconditions:the "Date of Birth" input field is active
+Steps to reproduce:1. in the mounth input field, enter the leters abc	
+Expected result:1. an error message appears: "The date is incorrect"
+
+ID:13.2
+Priority:medium
+Module:entry field
+Environment:iPhone 8 15.0.1., Chrome 94
+Title:entering leters in the year field
+Preconditions:the "Date of Birth" input field is active
+Steps to reproduce:1. in the year input field, enter the leters abc	
+Expected result:1. an error message appears: "The date is incorrect"
+
+ID:14
+Priority:high
+Module:entry field
+Environment:iPhone 8 15.0.1., Chrome 94
+Title:entering different symbols in the date field
+Preconditions:the "Date of Birth" input field is active
+Steps to reproduce:1.enter in the date input field, enter -*+9
+Expected result:1. an error message appears: "The date is incorrect"
+
+
+ID:14.1
+Priority:high
+Module:entry field
+Environment:iPhone 8 15.0.1., Chrome 94
+Title:entering different symbols in the mounth field
+Preconditions:the "Date of Birth" input field is active
+Steps to reproduce:1.enter in the mounth input field, enter -*+9
+Expected result:1. an error message appears: "The date is incorrect"
+
+
+ID:14.2
+Priority:high
+Module:entry field
+Environment:iPhone 8 15.0.1., Chrome 94
+Title:entering different symbols in the year field
+Preconditions:the "Date of Birth" input field is active
+Steps to reproduce:1.enter in the year input field, enter -*+9
+Expected result:1. an error message appears: "The date is incorrect"
+
+ID:15
+Priority:high
+Module:entry field
+Environment:iPhone 8 15.0.1., Chrome 94
+Title:interaction of the input field and the calendar
+Preconditions:the "Date of Birth" input field is active
+Steps to reproduce:1. in the date input field, enter the number 23
+2. in the mounth input field, enter the number 04
+3. in the year input field, enter the number 2002
+4. in the calendar window, select the date 01.02.2000
+Expected result:1. the number 23 is displayed in the input field
+2. the number 04 is displayed in the input field
+3. the number 2002 is displayed in the input field
+4. the date entered earlier on 23.04.2002 will be overwritten on 01.02.2000
+
+ID:16
+Priority:high
+Module:entry field
+Environment:iPhone 8 15.0.1., Chrome 94
+Title:interaction of the calendar  and the input field 
+Preconditions:the "Date of Birth" input field is active
+Steps to reproduce:1. in the calendar window, select the date 12.08.1998
+2.in the date input field, overwrite the number 25
+3.in the month input field, overwrite the number 06
+4.in the year input field, overwrite the number 1995
+Expected result:1. the date input fields are filled with the number 12, the mounth with the number 08, and the year with the number 1998
+2. the number 25 is displayed in the input field
+3. the number 06 is displayed in the input field
+4. the number 1995 is displayed in the input field
